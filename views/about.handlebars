@@ -1,0 +1,16 @@
+<h1>Yooo</h1>
+
+{{#each images}}
+
+<div class="imagecon">
+            <ul class="caption">
+                <li>{{title}}</li>
+                <li>{{details}}</li>
+            </ul>
+            <img src="{{image.path}}" alt="Pic" class="image">
+</div>
+
+{{else}}
+<p>Problem Loading Gallery...</p>
+
+{{/each}}

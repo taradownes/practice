@@ -1,0 +1,17 @@
+
+<h1>add</h1>
+{{#each errors}}
+
+<div>
+    {{text}}
+</div>
+{{else}}
+
+{{/each}}
+<form id="uploadbanner" enctype="multipart/form-data"  action="/ideas" method="POST">
+    <input id="fileupload" type="file" name="image" value="Image">
+    <input type="text" placeholder="Title" name="title">
+    <textarea type="text" placeholder="Details" name="details"></textarea>  
+    <button type="submit">Submit</button>
+</form>
+
